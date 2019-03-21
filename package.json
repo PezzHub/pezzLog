@@ -1,0 +1,32 @@
+{
+  "name": "pezzLog",
+  "version": "1.0.0",
+  "description": "Blog using Gatsby.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PezzHub/pezzLog"
+  },
+  "author": "pezz5224 <pezz5224@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "dependencies": {
+    "gatsby": "^2.2.5",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4"
+  }
+}
