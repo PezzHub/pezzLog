@@ -1,8 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Pandas Eating Lots`,
+    title: `PezzLog`,
   },
   plugins: [
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-lodash`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -10,8 +13,6 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {

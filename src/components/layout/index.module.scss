@@ -1,0 +1,19 @@
+@import "../../css/base";
+
+
+.root_container {
+  width: 100%;
+  margin: 0;
+}
+
+.header_container {
+  padding-top: 15vh;
+  margin: 0;
+  text-align: center;
+  position: relative;
+
+  .blog_title {
+    font-size: 30px;
+    font-weight: 400;
+  }
+}
