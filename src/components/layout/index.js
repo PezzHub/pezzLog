@@ -1,9 +1,16 @@
 import React from "react";
-import styles from "./index.module.scss";
+import "./index.scss";
+
+import {Link} from "gatsby";
+import config from "../../config/blog-config";
+// import Menu from "../menu/Index";
+
 
 export default class Layout extends React.Component {
+
   render() {
     const {location, children} = this.props;
+    const {blogTitle} = config;
 
     const rootPath = "/";
     const isRoot = location.pathname === rootPath;
@@ -11,34 +18,23 @@ export default class Layout extends React.Component {
     let header;
     if (isRoot) {
       header = (
-        <div className={styles.header_container}>
-          <div className={styles.blog_title}>
-            PezzLog
+        <div className="header-container">
+          <div className="blog-title">{blogTitle}</div>
+          {/*<Menu/>*/}
+        </div>
+      );
+    } else {
+      header = (
+        <div className="header-container">
+          <div className="blog-title">
+            <Link className="link" to={"/"}>{blogTitle}</Link>
           </div>
         </div>
       );
     }
-    // else if (isTag) {
-    //   header = (
-    //     <div className={styles.header_container}>
-    //       <div className={styles.header_container__inner}>
-    //         <h1 className={styles.blog_title_area}>
-    //           <Link
-    //             className={styles.blog_title}
-    //             to={"/"}
-    //           >{config.blogTitle} </Link>
-    //         </h1>
-    //         <Bio/>
-    //       </div>
-    //       <Rss/>
-    //     </div>
-    //   );
-    // } else {
-    //   header = "";
-    // }
 
     return (
-      <div className={styles.root_container}>
+      <div className="root-container">
         {header}
         {children}
         {/*<Footer isRoot={isRoot}/>*/}

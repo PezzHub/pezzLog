@@ -1,0 +1,13 @@
+@import "../../css/base";
+
+
+.Menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Item {
+  width: 50px;
+  margin: 10px;
+}

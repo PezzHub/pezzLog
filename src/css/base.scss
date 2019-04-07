@@ -1,6 +1,20 @@
-@import url("http://fonts.googleapis.com/earlyaccess/notosansjapanese.css");
+@charset "UTF-8";
+@import "define";
 
+
+h1,
+h2,
+h3,
 body {
-  //font-family: 'HelveticaNeue-Light', sans-serif;
-  font-family: 'Noto Sans Japanese', sans-serif;
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', sans-serif;
+  color: $base-grey;
+}
+
+.link {
+  text-decoration: unset;
+
+  &:hover {
+    opacity: 0.6;
+    box-shadow: 0 0 0 0 currentColor;
+  }
 }

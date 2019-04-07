@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
-import PostList from "../components/PostList";
+import PostList from "../components/postList";
 import {get} from "lodash";
 
 export default class SiteTop extends React.Component {
